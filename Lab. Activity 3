@@ -1,0 +1,32 @@
+def assign_grade(gen_ave):
+  if gen_ave < 0 or gen_ave > 100:
+    print('it is a invalid score!!')
+    print()
+  else:
+    if gen_ave < 60:
+      print(f'You got {gen_ave}. You have F grade!.')
+      print()
+    elif gen_ave <= 69:
+      print(f'You got {gen_ave}. You have D grade!.')    
+      print()
+      
+    elif gen_ave <= 79:
+      print(f'You got {gen_ave}. You have C grade!.')
+      print()
+    elif gen_ave <= 89:
+      print(f'You got {gen_ave} You have B grade!.')
+      print()
+    else:
+      print(f'You got {gen_ave} You have A grade!.')   
+      print()
+         
+#main loop
+while True:
+    #take grade from the user
+    calculus = float(input('grade calculus: '))
+    prog = float(input('grade prog: '))
+    econo = float(input('grade econo: '))
+    physics = float(input('grade physics: '))
+     
+    #calculate gen ave and pass from assign_grade function
+    assign_grade((calculus + prog + econo + physics)/ 4)
