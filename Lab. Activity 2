@@ -1,0 +1,10 @@
+def check_number(num):
+  if num %2 == 0:
+    print(num, 'is a Even Number.')
+  else:
+    print(num, 'is a Odd Number.')
+    
+#main loop
+while True:
+    num = int(input('check a number if Even or Odd Number:')) #take input
+    check_number(num)
