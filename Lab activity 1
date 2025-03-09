@@ -1,0 +1,17 @@
+def classify_age():
+   if age < 0:
+     print("invalid age!")
+   else:
+     if age <= 12:
+      print("You're a child!")
+     elif age <= 19:
+      print("You're a teen!")
+     elif age <= 64:
+      print("You're an retarded adult!")
+     else:
+      print("You're a senior citizen:)")
+      
+#main loop
+while True:
+   age = int(input("How old are you?: "))# take input
+   classify_age()
